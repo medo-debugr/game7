@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Mine Those Gems! (Breakout-Like game)</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id='rail'></div>
+<div id='combo_display'>
+  <span id='combo_span'>0</span>
+  <br>
+  BLOCK<br>COMBO
+</div>
+<div id='paddle'>
+  <div class='pad_control pad_left'></div>
+  <div class='pad_control pad_center'></div>
+  <div class='pad_control pad_right'></div>
+</div>
+<div id='ball'></div>
+<div id='start_message'>
+  <span class='tap_to_start'>TAP TO START</span>
+  <p>HI SCORE<br>
+    <span>0</span>
+  </p>
+  <div class='game_stats'>
+    <span class='game_round'>0</span>
+    <span class='game_blocks'>0</span>
+    <span class='game_combo'>0</span>
+    <span class='game_score'>0</span>
+  </div>  
+</div>
+<div id='mute_btn' onclick='muteSound(this)'>
+  <span class="material-icons-outlined">volume_up</span>    
+</div>
+<!-- <div id='request' onclick='onClick()'></div> -->
+
+<audio src="http://contentservice.mc.reyrey.net/audio_v1.0.0/?id=73702d54-159c-5403-9706-99824dee8d9e" id='gem_collect' preload></audio>
+<audio src="http://contentservice.mc.reyrey.net/audio_v1.0.0/?id=0c93115f-e01d-540b-9109-ae2229e92233" id='bg_music' preload loop></audio>
+<audio src="http://contentservice.mc.reyrey.net/audio_v1.0.0/?id=992018b3-27b2-5c3b-9d8f-ec6e59cb24ad" id='miss_ball' preload></audio>
+<audio src="http://contentservice.mc.reyrey.net/audio_v1.0.0/?id=c187b09c-169a-588a-bc72-3069b29d5101" id='you_died' preload></audio>
+
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
